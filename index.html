@@ -8,24 +8,28 @@
 		<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 		<meta property="og:image" content="https://www.ute.edu.ec/wp-content/uploads/2022/10/logo-ute-wp.png" />
 		<title>PROYECTO EN HTML-Ejercicio 2 en HTML</title>
+		<link rel="stylesheet" type="text/css" href="recursos\css\estilos.css">
 
 	</head>
 
 	<body>
 		<header>
 
-			<h1>Ejercicio 2</h1>
+			<h1 >Ejercicio 2</h1>
 
 			<nav>
-				<ul>
+				<ul >
 					<li><!--Lista-->
-						<a href="#inicio">Inicio</a>
+						<a id="menu-Prinicpal" href="#inicio">Inicio</a>
 					</li>
 					<li><!--Lista-->
-						<a href="#acerca">Acerca de nosotros</a>
+						<a id="menu-Prinicpal" href="#acerca">Acerca de nosotros</a>
 					</li>
 					<li><!--Lista-->
-						<a href="#contacto">Contactenos</a>
+						<a id="menu-Prinicpal" href="#contacto">Contactenos</a>
+					</li>
+					<li><!--Lista-->
+						<a id="menu-Prinicpal" href="seccion.html">Sección externa</a>
 					</li>
 				</ul>
 			</nav>
@@ -34,6 +38,7 @@
 			<section id="inicio">
 				<h2>Inicio</h2>
 				<p>Bienvenido a nuestro sitio web. Aquí encontrará información importante.</p>
+				<a href="https://www.google.com">Redireccionando a GOOGLE</a>
 			</section>
 			<section id="acerca">
 				<h2>Acerca de nosotros</h2>
@@ -107,12 +112,12 @@
 
 				<section id="youtube">
 					<h2>Video</h2>
-					<iframe width="853" height="480" src="https://www.youtube.com/embed/Yp_iZ8PCGPA" title="María Corina Machado arrasa en las primarias y se compromete a sacar a Maduro del poder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/Yp_iZ8PCGPA" title="María Corina Machado arrasa en las primarias y se compromete a sacar a Maduro del poder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				</section>
 
 				<section id="imagen">
 					<h2>Imagen</h2>
-					<img src="recursos\imagenes\google.jpg" alt="Descripcion de imagen" width="300px" height="200px">
+					<img src="recursos\imagenes\google.jpg" alt="Descripcion de imagen">
 				</section>
 
 				<section id="audio">
@@ -130,10 +135,3 @@
 	</body>
 
 </html>
-
-<!--<form action="/pagina-accion.php">
-		<label for="fname">Nombre:</label><br>
-		<input type="text" id="fname" value="Jhon"><br><br>
-		<input type="submit" value="Enviar">
-	</form>
--->
