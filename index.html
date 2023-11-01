@@ -5,8 +5,8 @@
 
 		<meta charset="utf-8"><!--utf-8 es para habla hispana (español)-->
 		<meta name="descrption" content="Proyecto en HTML">
-		<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-		<meta property="og:image" content="https://www.ute.edu.ec/wp-content/uploads/2022/10/logo-ute-wp.png" />
+		<!--meta property="og:image" content="https://www.ute.edu.ec/wp-content/uploads/2022/10/logo-ute-wp.png" /-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Esto es para que se adapte a un celular-->
 		<title>PROYECTO EN HTML-Ejercicio 2 en HTML</title>
 		<link rel="stylesheet" type="text/css" href="recursos\css\estilos.css">
 
@@ -18,24 +18,24 @@
 			<h1 >Ejercicio 2</h1>
 
 			<nav>
-				<ul >
-					<li><!--Lista-->
+				<ul id="link-menu-ul">
+					<li id="link-menu-li"><!--Lista-->
 						<a id="menu-Prinicpal" href="#inicio">Inicio</a>
 					</li>
-					<li><!--Lista-->
+					<li id="link-menu-li"><!--Lista-->
 						<a id="menu-Prinicpal" href="#acerca">Acerca de nosotros</a>
 					</li>
-					<li><!--Lista-->
+					<li id="link-menu-li"><!--Lista-->
 						<a id="menu-Prinicpal" href="#contacto">Contactenos</a>
 					</li>
-					<li><!--Lista-->
+					<li id="link-menu-li"><!--Lista-->
 						<a id="menu-Prinicpal" href="seccion.html">Sección externa</a>
 					</li>
 				</ul>
 			</nav>
 		</header>
 		<main>
-			<section id="inicio">
+			<section id="inicio"><!-- para los id se usa # para llamarlo, pero si se usa class es el .-->
 				<h2>Inicio</h2>
 				<p>Bienvenido a nuestro sitio web. Aquí encontrará información importante.</p>
 				<a href="https://www.google.com">Redireccionando a GOOGLE</a>

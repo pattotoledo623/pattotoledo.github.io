@@ -7,28 +7,23 @@
 		<meta name="descrption" content="Proyecto en HTML">
 		<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 		<meta property="og:image" content="https://www.ute.edu.ec/wp-content/uploads/2022/10/logo-ute-wp.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Esto es para que se adapte a un celular-->
 		<title>PROYECTO EN HTML-Ejercicio 2 en HTML</title>
 		<link rel="stylesheet" type="text/css" href="recursos\css\estilos.css">
 
 	</head>
 
-	<body>
-		<header>
+	<body style="background-color: black;">
+		<header style="border: 3px solid #FF4200; margin: 20px; padding: 20px;">
 
-			<h1 >Ejercicio 2</h1>
+			<h1>Ejercicio 2</h1>
 
 			<nav>
-				<ul >
-					<li><!--Lista-->
+				<ul id="link-menu-ul">
+					<li id="link-menu-li"><!--Lista-->
 						<a id="menu-Prinicpal" href="index.html">Inicio</a>
 					</li>
-					<li><!--Lista-->
-						<a id="menu-Prinicpal" href="index.html/#acerca">Acerca de nosotros</a>
-					</li>
-					<li><!--Lista-->
-						<a id="menu-Prinicpal" href="index.html/#contacto">Contactenos</a>
-					</li>
-					<li><!--Lista-->
+					<li id="link-menu-li"><!--Lista-->
 						<a id="menu-Prinicpal" href="seccion.html">Seccion externa</a>
 					</li>
 				</ul>
@@ -36,6 +31,62 @@
 		</header>
 
 		<main>
+			<nav>
+				<section class="nav">
+					<h2 class="seccion-h2">Media Query</h2>
+					<p style="text-align: left;">En el siguiente apartado se vera la definición y el objetivo de los media query</p>
+					<nav>
+						<ul style="text-align: left">
+							<li><!--Lista-->
+								<a class="menu-seccion" href="#definición">Definición</a>
+							</li>
+							<li><!--Lista-->
+								<a class="menu-seccion" href="#objetivo">Objetivo</a>
+							</li>
+
+							<li><!--Lista-->
+								<a class="menu-seccion" href="#video">Video</a>
+							</li>
+							<li><!--Lista-->
+								<a class="menu-seccion" href="seccion.html">Sección externa</a>
+							</li>
+						</ul>
+					</nav>
+				</section>
+			</nav>
+			<div class="divseccion">
+				<section class="seccion">
+					<section id="definición">
+						<article>
+							<h2 class="seccion-h2">¿Qué son los Media Query</h2>
+							<p>Los Media Query son la base del diseño responsive (responsivo o adaptable). Esto significa que con una misma maquetación HTML, nuestro diseño se adaptará a diferentes dispositivos y tipos de pantalla.</p>
+						</article>
+					</section>
+					<section id="objetivo">
+						<article>
+							<h2 class="seccion-h2">Objetivo</h2>
+							<p>El objetivo de utilizar una Media Query en una hoja de estilo CSS en nuestra página web es que se ejecute una regla o un conjunto de reglas si se cumple una condición determinada, como puede ser el ancho máximo de pantalla.</p>
+						</article>
+					</section>
+				</section>
+				<aside class="seccionas">
+					<img id="imagsec" src="recursos\imagenes\media-Query.png" alt="Descripcion de la imagen">
+				</aside>
+			</div>
+
+			<div>
+				<section id="video">
+					<h2 class="seccion-h2">Video</h2>
+					<iframe width="853" height="480" src="https://www.youtube.com/embed/yneuaVjotO8" title="Aprende Media Queries en CSS | Responsive Design" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</section>
+			</div>
+
+			<div>
+				<section>
+					<h2>Querido ingeniero</h2>
+					<p>Querido ingeniero, estoy intentando hacerle responsivo pero esto es lo que he conseguido hasta ahora gracias</p>
+				</section>
+			</div>
 
 		</main>
 

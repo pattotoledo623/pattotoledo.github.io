@@ -13,12 +13,12 @@ header{
 	padding: 20px;
 }
 
-nav ul{
+#link-menu-ul{
 	list-style: none;
 	padding: 0;
 }
 
-nav li{
+#link-menu-li{
 	display: inline;
 	margin-right: 50px;
 }
@@ -104,4 +104,109 @@ iframe{
 #youtube{
 	width: 100%;
 	height: auto;
+}
+
+@media screen and (max-width: 634px){
+	/*Esto significa que a partir de esa resolucion va a cambiar las cosas cuando se use en celular*/
+	header{
+		padding: 10px;
+	}
+
+	#link-menu-ul{
+		text-align: center;
+	}
+
+	#link-menu-li{
+		display: block;
+		margin: 10px;
+	}
+
+	main{
+		margin: 10px;
+	}
+
+	form{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+	#inicio{
+		background-color: #F98268;
+	}
+}
+
+@media screen and (max-width: 480px){
+	nav li{
+		margin: 5px, 0;
+	}
+}
+
+@media screen and (max-width: 300px){
+	#contacto{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 500px){
+	#productos{
+		font-size: 40px;
+	}
+}
+
+/*Este apartado es de el html de seccion*/
+
+.nav{
+	background-color: #F8FC9E;
+	color: #000000;
+	text-align: center;
+}
+
+.seccion-h2{
+	color: black;
+}
+
+.seccion{
+	background-color: #FF8E8E;
+	padding: 10px;
+	height: auto;
+	width: auto;
+}
+
+#definición, #objetivo, .seccion, .seccionas, .nav{
+	border: 3px solid #FF4200;
+}
+
+.seccionas{
+	background-color: #FFAE00;
+	padding: 5px;
+	height: auto;
+	width: 100%;
+}
+
+.divseccion{
+	display: flex;
+	padding: 1px;
+	height: auto;
+}
+
+.video{
+	background-color: #BBBBBB;
+}
+
+@media screen and (min-width: 1411px){
+
+	#imagsec{
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 1411px){
+	#definición, #objetivo{
+		font-size: 20px;
+		width: auto;
+		height: auto;
+	}
 }
