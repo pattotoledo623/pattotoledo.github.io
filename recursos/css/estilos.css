@@ -106,6 +106,13 @@ iframe{
 	height: auto;
 }
 
+@media screen and (max-width: 1515px){
+	#youtube{
+		width: auto;
+		height: auto;
+	}
+}
+
 @media screen and (max-width: 634px){
 	/*Esto significa que a partir de esa resolucion va a cambiar las cosas cuando se use en celular*/
 	header{
@@ -128,6 +135,8 @@ iframe{
 	form{
 		width: 90%;
 	}
+
+
 }
 
 @media screen and (max-width: 600px){
@@ -161,6 +170,8 @@ iframe{
 	background-color: #F8FC9E;
 	color: #000000;
 	text-align: center;
+	margin: 10px 0px;
+	padding: 1px 0px 1px;
 }
 
 .seccion-h2{
@@ -170,7 +181,8 @@ iframe{
 .seccion{
 	background-color: #FF8E8E;
 	padding: 10px;
-	height: auto;
+	height: 100%;
+	margin: 0px;
 	width: auto;
 }
 
@@ -183,11 +195,14 @@ iframe{
 	padding: 5px;
 	height: auto;
 	width: 100%;
+	align-items: center;
+	display: inline-block;
 }
 
 .divseccion{
 	display: flex;
-	padding: 1px;
+	gap: 5px;
+	padding: 0px 1px 20px;
 	height: auto;
 }
 
@@ -201,6 +216,9 @@ iframe{
 		width: 100%;
 		height: auto;
 	}
+	.seccion{
+		margin: 0px;
+	}
 }
 
 @media screen and (max-width: 1411px){
@@ -208,5 +226,37 @@ iframe{
 		font-size: 20px;
 		width: auto;
 		height: auto;
+	}
+	#imagsec{
+		width: 100%;
+		height: auto;
+	}
+	
+}
+
+@media screen and (max-width: 1000px){
+	.divseccion{
+		flex-direction: column;
+		height: auto;
+		width: auto;
+	}
+	.seccionas{
+		padding: 0px 240px;
+		margin: 0px;
+		width: auto;
+		height: auto;
+	}
+	.nav{
+
+		align-items: center;
+	}
+	#imagsec{
+		width: auto;
+		height: auto;
+	}
+}
+@media screen and (max-width: 700px){
+	.seccionas{
+		display: none;
 	}
 }
