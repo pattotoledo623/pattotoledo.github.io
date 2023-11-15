@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="utf-8"><!--utf-8 es para habla hispana (español)-->
+		<meta name="descrption" content="Proyecto en HTML">
+		<!--meta property="og:image" content="https://www.ute.edu.ec/wp-content/uploads/2022/10/logo-ute-wp.png" /-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Esto es para que se adapte a un celular-->
+		<title>PROYECTO EN HTML-Ejercicio 2 en HTML</title>
+		<link rel="stylesheet" type="text/css" href="recursos\css\estilos.css">
+		<link rel="icon" href="recursos\imagenes\logo.ico">
+		<script type="text/javascript" src="recursos\js\scrip.js"></script>
+
+	</head>
+
+	<body>
+		<header>
+
+			<h1 >Ejercicio 2</h1>
+
+			<nav>
+				<ul id="link-menu-ul">
+					<li id="link-menu-li"><!--Lista-->
+						<a id="menu-Prinicpal" href="#inicio">Inicio</a>
+					</li>
+					<li id="link-menu-li"><!--Lista-->
+						<a id="menu-Prinicpal" href="#acerca">Acerca de nosotros</a>
+					</li>
+					<li id="link-menu-li"><!--Lista-->
+						<a id="menu-Prinicpal" href="#contacto">Contactenos</a>
+					</li>
+					<li id="link-menu-li"><!--Lista-->
+						<a id="menu-Prinicpal" href="seccion.html">Sección externa</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="inicio"><!-- para los id se usa # para llamarlo, pero si se usa class es el .-->
+				<h2>Inicio</h2>
+				<h1 id="mensaje js"></h1>
+				<p id="hora"></p>
+				<p><script>multiplica (20, 10)</script></p>
+				<p><script>raiz (1, 3, 2)</script></p>
+				<p>Bienvenido a nuestro sitio web. Aquí encontrará información importante.</p>
+				<a href="https://www.google.com">Redireccionando a GOOGLE</a>
+			</section>
+			<section id="acerca">
+				<h2>Acerca de nosotros</h2>
+				<p>Somos una empresa comprometida con la calidad de nuestros productos</p>
+			</section>
+			<section id="contacto">
+				<h2>Contacto</h2>
+				<form action="/procesar.php" method="post">
+					<label for="nombre">Nombre:</label>
+					<input type="text" name="nombre" id="nombre" required>
+					<br>
+					<label for="edad">Edad:</label>
+					<input type="number" name="edad" id="edad" required>
+					<br>
+					<label for="correo">Correo:</label>
+					<input type="email" name="correo" id="correo" required>
+					<br>
+					<label for="mensaje">Mensaje:</label>
+					<textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+					<br><br>
+					<input type="submit" value="Enviar">
+				</form>
+			</section>
+
+			<section id="lista">
+				<h2>Lista de elementos</h2>
+				<ul>
+					<li>Elemento 1</li>
+					<li>Elemento 2</li>
+					<li>Elemento 3</li>
+				</ul>
+			</section>
+
+			<section id="google">
+				<h2>Sitio Web</h2>
+				<iframe src="https://www.ute.edu.ec" width="100%" height="900px"></iframe>
+			</section>
+
+			<!--Barra lateral-->
+			<aside>
+				<section>
+					<h2>Enlaces rapidos</h2>
+					<ul>
+						<li>
+							<a href="#noticias">Noticias</a>
+						</li>
+						<li>
+							<a href="#eventos">Eventos</a>
+						</li>
+					</ul>
+				</section>
+
+				<!--Tabla de productos-->
+				<section id="productos">
+					<h2>Tabla productos</h2>
+					<table border="1">
+						<tr>
+							<th>Producto</th>
+							<th>Precio</th>
+						</tr>
+						<tr>
+							<td>Producto 1</td>
+							<td>$50.00</td>
+						</tr>
+						<tr>
+							<td>Producto 2</td>
+							<td>$20.00</td>
+						</tr>
+					</table>
+				</section>
+
+				<section id="youtube">
+					<h2>Video</h2>
+					<iframe id="vidio" src="https://www.youtube.com/embed/Yp_iZ8PCGPA" title="María Corina Machado arrasa en las primarias y se compromete a sacar a Maduro del poder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</section>
+
+				<section id="imagen">
+					<h2>Imagen</h2>
+					<img src="recursos\imagenes\google.jpg" alt="Descripcion de imagen">
+				</section>
+
+				<section id="audio">
+					<h2>Audio</h2>
+					<audio controls>
+						<source src="recursos\audio\hello-adele.mp3" type="audio/mp3">
+					</audio>
+				</section>
+			</aside>
+		</main>
+
+		<footer>
+			<p>Todos los derechos reservados 2023. Michael Villarreal</p>
+		</footer>
+	</body>
+
+</html>
